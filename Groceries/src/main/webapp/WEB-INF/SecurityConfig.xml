@@ -1,0 +1,33 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:webflow-config="http://www.springframework.org/schema/webflow-config"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/security 
+       http://www.springframework.org/schema/security/spring-security.xsd
+       http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd">
+
+		<security:http auto-config="true" use-expressions="true">
+		<security:intercept-url pattern="/home" access="permitAll" />
+		
+		<security:intercept-url pattern="" access="hasRole('ROLE-ADMIN')" />
+		
+		<security:intercept-url pattern="" access="hasAnyRole('ROLE-USER','ROLE-ADMIN')" />
+		
+		<security:form-login login-page="" login-processing-url="/process_login" default-target-url="/home" authentication-failure-url="\login?error"/>
+		<security:logout logout-success-url="/login"/>
+		<security:csrf disabled="true" />
+		
+		</security:http>
+		
+		<security:authentication-manager><security:authentication-provider><security:jdbc-user-service
+		data-source-ref="dataSource"
+		authorities-by-username-query="SELECT email,roleId FROM user WHERE email=? "
+		users-by-username-query="SELECT email,password,enabled FROM user WHERE email=?">
+		
+		</security:jdbc-user-service>
+		
+	</security:authentication-provider></security:authentication-manager>
+		 -->

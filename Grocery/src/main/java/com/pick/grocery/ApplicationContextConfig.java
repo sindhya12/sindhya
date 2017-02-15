@@ -26,7 +26,7 @@ import com.pick.model.UserModel;
 @EnableTransactionManagement
 public class ApplicationContextConfig
 {
-
+	
 	@Bean(name = "dataSource")
 	public DataSource getDataSource() 
 	{

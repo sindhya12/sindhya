@@ -46,32 +46,7 @@ public class App
        prodo add1 = new prodo();
         
        
-        /*add1.setBname("nivea");
-        
-        add1.setPname("deo");
-        add1.setPrice(200);
-        add1.setQuantity(1);
-       add1.setCategory("jhds");
-       add1.setProdDsc("jdsg");*/
-        
     
-        //add.setId(2);
-/*
-        add.setFirstName("sinayyar");
-        add.setLastName("jaddu");
-        add.setEmail("ruby");
-*/
-        
-       
-       // ud.save(add);
-        
-       // ud.Update(add);
-       // ud.delete(add);
-        System.out.println(add1);
-      //  pd.insert(add1);
-        //pd.update(add1);
-        //pd.delete(add1);
-        //System.out.println(add1);
 	}
 }
  

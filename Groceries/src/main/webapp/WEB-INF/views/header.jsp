@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="styles.css">
 <style>
 body {
-	background-image: url("C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (1).jpg");
+	background-image: url("/resources/images/img (1).jpg");
 	background-repeat:no-repeat;
 	
 }

@@ -8,35 +8,35 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!--
+
 <form action="addprodo" method="post" enctype="multipart/form-data">
 <label name="pname">PRODUCT NAME</label>
 <input type="text" name="pname" >
-
+<br><br>
 <label name="bname">BRAND NAME</label>
 <input type="text" name="bname" >
-
+<br><br>
 <label name="price">PRODUCT PRICE</label>
 <input type="text" name="price" >
-
+<br><br>
 <label name="quantity">PRODUCT QUANTITY</label>
 <input type="text" name="quantity" >
-
+<br><br>
 <label name="category">PRODUCT CATEGORY</label>
 <select  name="category"  >
      <option>vegetables</option>
      <option>fruits</option>
      <option>cereals</option>
  </select>
-
+<br><br>
 <label name="prodDsc">PRODUCT DESCRIPTION</label>
 <input type="text" name="prodDsc" >
-
+<br><br>
 <input type="file" name="files" value="fileupload" >
 <input type="submit" id="btnSubmit" class="btn btn-success">
-</form>-->
- <form:form method="POST" action="addprodo" commandName="prodoobj" enctype="multipart/form-data">
-<table class="centerTable">
+</form>
+<%-- <form:form method="POST" action="addprodo" commandName="prodoobj" enctype="multipart/form-data">
+ <table class="centerTable">
 
 	<tr>
         <td><form:label path="pname">ProductName</form:label></td>
@@ -70,6 +70,6 @@
     </tr>
   
 </table>
-</form:form>
+</form:form> --%>
 </body>
 </html>

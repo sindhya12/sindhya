@@ -48,7 +48,7 @@
 
       <div class="item">
        
-      <img src="<c:url value='C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (2).jpg'/>" >
+      <img src="<c:url value="C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (2).jpg"/>" >
         <div class="carousel-caption">
           <h3>SPICY</h3>
           <p>CHILL IT</p>
@@ -56,7 +56,7 @@
       </div>
     
       <div class="item">
-        <img src="<c:url value='C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (5).jpg'/>" >
+        <img src="<c:url value="C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (9).jpg"/>" >
         <div class="carousel-caption">
           <h3>DRY FRUITS</h3>
           <p>LIVE HEALTHY</p>
@@ -64,14 +64,14 @@
       </div>
 
       <div class="item">
-        <img src="<c:url value='C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (7).jpg'/>" >
+        <img src="<c:url value="C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (5).jpg"/>" >
         <div class="carousel-caption">
           <h3>FRUITS</h3>
           <p>NATURE SAVES US</p>
         </div>
       </div>
   <div class="item">
-        <img src="<c:url value='C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (9).jpg'/>" >
+        <img src="<c:url value="C:\Users\sindhya\git\sindhya\Groceries\src\main\resources\images\img (6).jpg"/>" >
         <div class="carousel-caption">
           <h3>PULSES</h3>
           <p>HEALTH CONSCIOUS</p>

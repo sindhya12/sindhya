@@ -63,12 +63,15 @@ public class AdminController
 	 {
 		 prodo product = new prodo();
 		 model.addAttribute("prodoobj",product);
-		 return "addprodo";
+		 return "addproduct";
 	 }
 	 @RequestMapping(value = "/addprodo",method = RequestMethod.POST)
+	 
 	 public String prod2(@ModelAttribute(value="prodoobj")prodo product, MultipartFile files,HttpServletRequest req,ModelMap model) throws IOException
 	 {
+		 System.out.println("befr insert");
 		 pd.insert(product); 
+		 System.out.println("after insert");
 		/* System.out.println(req.getParameter("pname"));
 		 System.out.println(product.getCategory());
 		 pd.insert(product); ,HttpServletRequest req*/
@@ -76,11 +79,12 @@ public class AdminController
 		 p.setBname(req.getParameter("pname"));*/
 		 MultipartFile files1 = product.getFiles();
 		 System.out.println(files1.getOriginalFilename());
-		
+		 String p= req.getContextPath();
+		 System.out.println(p);
 		 String path = "C:/Users/sindhya/git/sindhya/Groceries/src/main/webapp/resources/image" +product.getPid()+".jpg";
 		 byte[] bytes = files1.getBytes();
-		 System.out.println();
-		  BufferedOutputStream image = new BufferedOutputStream(new FileOutputStream(new File(path)));
+		
+		 BufferedOutputStream image = new BufferedOutputStream(new FileOutputStream(new File(path)));
 		 System.out.println(image);
 		 image.write(bytes);
 		 image.close();
@@ -102,7 +106,7 @@ public class AdminController
 	 @RequestMapping("/admin/product/delete/{pid}")
 	 public String deleteprodbyId(@PathVariable(value="pid")int pid)
 	 {
-		 pd.delete(pid);
+		pd.delete(pid);
 		return "redirect:/listproducts";
 	 }
 	 @RequestMapping("/admin/product/edit/{pid}")

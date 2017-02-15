@@ -1,6 +1,7 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@ include file="header.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
 
-<form action="addprodo" method="post" enctype="multipart/form-data">
+<form action="addprodo" method="post" commandName="prodoobj" enctype="multipart/form-data">
 <label name="pname">PRODUCT NAME</label>
 <input type="text" name="pname" >
 <br><br>

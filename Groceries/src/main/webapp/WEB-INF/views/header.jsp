@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="styles.css">
 <style>
 body {
-	background-image: url("<c:url value='/resources/images/img (5).jpg'/>" );
+	background-image: url("<c:url value='/resources/images/img (11).jpg'/>" );
 	background-repeat:no-repeat;
 	
 }

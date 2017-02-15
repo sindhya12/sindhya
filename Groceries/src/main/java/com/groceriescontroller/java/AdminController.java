@@ -66,7 +66,7 @@ public class AdminController
 		 return "addprodo";
 	 }
 	 @RequestMapping(value = "/addprodo",method = RequestMethod.POST)
-	 public String prod2(@ModelAttribute(value="prodoobj")prodo product,ModelMap model) throws IOException
+	 public String prod2(@ModelAttribute(value="prodoobj")prodo product, MultipartFile files,HttpServletRequest req,ModelMap model) throws IOException
 	 {
 		 pd.insert(product); 
 		/* System.out.println(req.getParameter("pname"));
@@ -77,7 +77,7 @@ public class AdminController
 		 MultipartFile files1 = product.getFiles();
 		 System.out.println(files1.getOriginalFilename());
 		
-		 String path = "C:/Users/sindhya/project/Groceries/src/main/resources/image/" +product.getPid()+".jpg";
+		 String path = "C:/Users/sindhya/git/sindhya/Groceries/src/main/webapp/resources/image" +product.getPid()+".jpg";
 		 byte[] bytes = files1.getBytes();
 		 System.out.println();
 		  BufferedOutputStream image = new BufferedOutputStream(new FileOutputStream(new File(path)));

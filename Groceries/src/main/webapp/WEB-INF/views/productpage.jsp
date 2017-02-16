@@ -14,6 +14,6 @@
 NAME:${showobj.pname }<br><br>
 DETAILS:${showobj.pname }
 
-<img src="<c:url value="/resources/image/${showobj.getPid()}.jpg }"/>">
+<img src="<c:url value="/resources/image/${showobj.getPid()}.jpg "/>">
 </body>
-</html>"src/main/webapp/WEB-INF/views/productpage.jsp"
+</html>

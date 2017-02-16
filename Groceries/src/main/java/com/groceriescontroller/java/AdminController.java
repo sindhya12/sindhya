@@ -63,7 +63,7 @@ public class AdminController
 	 {
 		 prodo product = new prodo();
 		 model.addAttribute("prodoobj",product);
-		 return "addproduct";
+		 return "addprodo";
 	 }
 	 @RequestMapping(value = "/addprodo",method = RequestMethod.POST)
 	 
@@ -100,6 +100,7 @@ public class AdminController
 	 @RequestMapping("/listPost/{pid}")
 	 public ModelAndView pos(@PathVariable(value="pid")int pid)
 	 {
+		 
 		prodo pr=pd.prodById(pid); 
 		return new ModelAndView("productpage","showobj",pr);
 	 }

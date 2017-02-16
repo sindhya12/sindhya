@@ -83,7 +83,7 @@ public class AdminController
 		 System.out.println(p);
 		 String path = "C:/Users/sindhya/git/sindhya/Groceries/src/main/webapp/resources/image/" +product.getPid()+".jpg";
 		 byte[] bytes = files1.getBytes();
-		
+		 System.out.println(bytes);
 		 BufferedOutputStream image = new BufferedOutputStream(new FileOutputStream(new File(path)));
 		 System.out.println(image);
 		 image.write(bytes);
